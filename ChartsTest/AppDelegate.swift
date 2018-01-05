@@ -7,12 +7,20 @@
 //
 
 import UIKit
+import Charts
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    
+    private override init() {
+        super.init()
+        
+        //YAxisRenderer.classInit
+    } // init
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.

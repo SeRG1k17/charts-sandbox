@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +14,44 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ChartsTest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yellowBlue" translatesAutoresizingMaskIntoConstraints="NO" id="Roe-gx-9n3">
+                                <rect key="frame" x="16" y="156" width="343" height="375"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MYC-1z-P6g" customClass="CustomCombinedChartView" customModule="ChartsTest" customModuleProvider="target">
+                                <rect key="frame" x="16" y="156" width="343" height="375"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="MYC-1z-P6g" secondAttribute="height" multiplier="32:35" id="j0g-K5-Xh0"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Roe-gx-9n3" firstAttribute="top" secondItem="MYC-1z-P6g" secondAttribute="top" id="Lk3-Yn-ANb"/>
+                            <constraint firstItem="MYC-1z-P6g" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="VTs-I1-oKZ"/>
+                            <constraint firstItem="MYC-1z-P6g" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="Xdp-Os-iaS"/>
+                            <constraint firstItem="Roe-gx-9n3" firstAttribute="bottom" secondItem="MYC-1z-P6g" secondAttribute="bottom" id="a89-xD-A9Z"/>
+                            <constraint firstItem="MYC-1z-P6g" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="dKr-7p-Nv2"/>
+                            <constraint firstAttribute="trailing" secondItem="MYC-1z-P6g" secondAttribute="trailing" constant="16" id="hEM-d9-0mK"/>
+                            <constraint firstItem="Roe-gx-9n3" firstAttribute="trailing" secondItem="MYC-1z-P6g" secondAttribute="trailing" id="jgZ-lm-Y80"/>
+                            <constraint firstItem="Roe-gx-9n3" firstAttribute="leading" secondItem="MYC-1z-P6g" secondAttribute="leading" id="yGw-Yh-SFH"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="chartView" destination="MYC-1z-P6g" id="aSv-vp-auH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="116" y="117.39130434782609"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="yellowBlue" width="375" height="667"/>
+    </resources>
 </document>

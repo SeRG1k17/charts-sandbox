@@ -12,9 +12,18 @@
 		6516DEF71FFE0D1A00AC39A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6516DEF51FFE0D1A00AC39A6 /* Main.storyboard */; };
 		6516DEF91FFE0D1A00AC39A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6516DEF81FFE0D1A00AC39A6 /* Assets.xcassets */; };
 		6516DEFC1FFE0D1A00AC39A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6516DEFA1FFE0D1A00AC39A6 /* LaunchScreen.storyboard */; };
+		6516DF0C1FFE2C8700AC39A6 /* Swizzling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6516DF0B1FFE2C8700AC39A6 /* Swizzling.swift */; };
+		6516DF181FFF4F8F00AC39A6 /* CustomXAxisRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6516DF171FFF4F8E00AC39A6 /* CustomXAxisRenderer.swift */; };
+		654199F71FFF58E000B29643 /* CustomCombinedChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654199F61FFF58E000B29643 /* CustomCombinedChartView.swift */; };
+		654199F91FFF793900B29643 /* SegmentedChartLimitLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654199F81FFF793900B29643 /* SegmentedChartLimitLine.swift */; };
+		654199FD1FFF90A200B29643 /* CustomYAxisRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654199FC1FFF90A200B29643 /* CustomYAxisRenderer.swift */; };
+		654199FF1FFFA94F00B29643 /* AxisBaseExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654199FE1FFFA94F00B29643 /* AxisBaseExtension.swift */; };
+		DF453A3C662D57852E820529 /* Pods_ChartsTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC83DE329F6CDDA894DB7B3F /* Pods_ChartsTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		37D6D75F947CB5518567ED30 /* Pods-ChartsTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChartsTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChartsTest/Pods-ChartsTest.debug.xcconfig"; sourceTree = "<group>"; };
+		57D267F6F8D89026A51D1487 /* Pods-ChartsTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChartsTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChartsTest/Pods-ChartsTest.release.xcconfig"; sourceTree = "<group>"; };
 		6516DEEE1FFE0D1A00AC39A6 /* ChartsTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChartsTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6516DEF11FFE0D1A00AC39A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6516DEF31FFE0D1A00AC39A6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +31,13 @@
 		6516DEF81FFE0D1A00AC39A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6516DEFB1FFE0D1A00AC39A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6516DEFD1FFE0D1A00AC39A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6516DF0B1FFE2C8700AC39A6 /* Swizzling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swizzling.swift; sourceTree = "<group>"; };
+		6516DF171FFF4F8E00AC39A6 /* CustomXAxisRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomXAxisRenderer.swift; sourceTree = "<group>"; };
+		654199F61FFF58E000B29643 /* CustomCombinedChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCombinedChartView.swift; sourceTree = "<group>"; };
+		654199F81FFF793900B29643 /* SegmentedChartLimitLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedChartLimitLine.swift; sourceTree = "<group>"; };
+		654199FC1FFF90A200B29643 /* CustomYAxisRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomYAxisRenderer.swift; sourceTree = "<group>"; };
+		654199FE1FFFA94F00B29643 /* AxisBaseExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AxisBaseExtension.swift; sourceTree = "<group>"; };
+		EC83DE329F6CDDA894DB7B3F /* Pods_ChartsTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChartsTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF453A3C662D57852E820529 /* Pods_ChartsTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +57,8 @@
 			children = (
 				6516DEF01FFE0D1A00AC39A6 /* ChartsTest */,
 				6516DEEF1FFE0D1A00AC39A6 /* Products */,
+				7B82517254918988FFA6E807 /* Pods */,
+				98C013FFF6AD2CD7392389A2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +75,35 @@
 			children = (
 				6516DEF11FFE0D1A00AC39A6 /* AppDelegate.swift */,
 				6516DEF31FFE0D1A00AC39A6 /* ViewController.swift */,
+				6516DF171FFF4F8E00AC39A6 /* CustomXAxisRenderer.swift */,
+				654199FC1FFF90A200B29643 /* CustomYAxisRenderer.swift */,
+				6516DF0B1FFE2C8700AC39A6 /* Swizzling.swift */,
+				654199F61FFF58E000B29643 /* CustomCombinedChartView.swift */,
+				654199F81FFF793900B29643 /* SegmentedChartLimitLine.swift */,
+				654199FE1FFFA94F00B29643 /* AxisBaseExtension.swift */,
 				6516DEF51FFE0D1A00AC39A6 /* Main.storyboard */,
 				6516DEF81FFE0D1A00AC39A6 /* Assets.xcassets */,
 				6516DEFA1FFE0D1A00AC39A6 /* LaunchScreen.storyboard */,
 				6516DEFD1FFE0D1A00AC39A6 /* Info.plist */,
 			);
 			path = ChartsTest;
+			sourceTree = "<group>";
+		};
+		7B82517254918988FFA6E807 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				37D6D75F947CB5518567ED30 /* Pods-ChartsTest.debug.xcconfig */,
+				57D267F6F8D89026A51D1487 /* Pods-ChartsTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		98C013FFF6AD2CD7392389A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC83DE329F6CDDA894DB7B3F /* Pods_ChartsTest.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +113,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6516DF001FFE0D1A00AC39A6 /* Build configuration list for PBXNativeTarget "ChartsTest" */;
 			buildPhases = (
+				5D5B07B5D9EC5BF06BE9A913 /* [CP] Check Pods Manifest.lock */,
 				6516DEEA1FFE0D1A00AC39A6 /* Sources */,
 				6516DEEB1FFE0D1A00AC39A6 /* Frameworks */,
 				6516DEEC1FFE0D1A00AC39A6 /* Resources */,
+				BC919793A0C4428E16EE43BA /* [CP] Embed Pods Frameworks */,
+				3958CADE6D8627FC9CBCB1D8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,13 +176,73 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3958CADE6D8627FC9CBCB1D8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChartsTest/Pods-ChartsTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D5B07B5D9EC5BF06BE9A913 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChartsTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC919793A0C4428E16EE43BA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ChartsTest/Pods-ChartsTest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChartsTest/Pods-ChartsTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6516DEEA1FFE0D1A00AC39A6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				654199F71FFF58E000B29643 /* CustomCombinedChartView.swift in Sources */,
+				6516DF0C1FFE2C8700AC39A6 /* Swizzling.swift in Sources */,
 				6516DEF41FFE0D1A00AC39A6 /* ViewController.swift in Sources */,
 				6516DEF21FFE0D1A00AC39A6 /* AppDelegate.swift in Sources */,
+				654199F91FFF793900B29643 /* SegmentedChartLimitLine.swift in Sources */,
+				6516DF181FFF4F8F00AC39A6 /* CustomXAxisRenderer.swift in Sources */,
+				654199FD1FFF90A200B29643 /* CustomYAxisRenderer.swift in Sources */,
+				654199FF1FFFA94F00B29643 /* AxisBaseExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +377,7 @@
 		};
 		6516DF011FFE0D1A00AC39A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37D6D75F947CB5518567ED30 /* Pods-ChartsTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +393,7 @@
 		};
 		6516DF021FFE0D1A00AC39A6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57D267F6F8D89026A51D1487 /* Pods-ChartsTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
