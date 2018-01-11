@@ -20,10 +20,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yellowBlue" translatesAutoresizingMaskIntoConstraints="NO" id="Roe-gx-9n3">
-                                <rect key="frame" x="16" y="156" width="343" height="375"/>
+                                <rect key="frame" x="0.0" y="138.5" width="375" height="410"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MYC-1z-P6g" customClass="CustomCombinedChartView" customModule="ChartsTest" customModuleProvider="target">
-                                <rect key="frame" x="16" y="156" width="343" height="375"/>
+                                <rect key="frame" x="0.0" y="138.5" width="375" height="410"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="MYC-1z-P6g" secondAttribute="height" multiplier="32:35" id="j0g-K5-Xh0"/>
                                 </constraints>
@@ -32,11 +32,10 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Roe-gx-9n3" firstAttribute="top" secondItem="MYC-1z-P6g" secondAttribute="top" id="Lk3-Yn-ANb"/>
-                            <constraint firstItem="MYC-1z-P6g" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="VTs-I1-oKZ"/>
-                            <constraint firstItem="MYC-1z-P6g" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="Xdp-Os-iaS"/>
+                            <constraint firstItem="MYC-1z-P6g" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Xdp-Os-iaS"/>
                             <constraint firstItem="Roe-gx-9n3" firstAttribute="bottom" secondItem="MYC-1z-P6g" secondAttribute="bottom" id="a89-xD-A9Z"/>
                             <constraint firstItem="MYC-1z-P6g" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="dKr-7p-Nv2"/>
-                            <constraint firstAttribute="trailing" secondItem="MYC-1z-P6g" secondAttribute="trailing" constant="16" id="hEM-d9-0mK"/>
+                            <constraint firstAttribute="trailing" secondItem="MYC-1z-P6g" secondAttribute="trailing" id="hEM-d9-0mK"/>
                             <constraint firstItem="Roe-gx-9n3" firstAttribute="trailing" secondItem="MYC-1z-P6g" secondAttribute="trailing" id="jgZ-lm-Y80"/>
                             <constraint firstItem="Roe-gx-9n3" firstAttribute="leading" secondItem="MYC-1z-P6g" secondAttribute="leading" id="yGw-Yh-SFH"/>
                         </constraints>

@@ -49,6 +49,7 @@ class ViewController: UIViewController {
         chartView.legend.enabled = false
         chartView.gridBackgroundImages = [#imageLiteral(resourceName: "clouds")]
         chartView.extraBottomOffset = 16.0
+        chartView.minOffset = 0.0
         
         setupAxes()
     }
